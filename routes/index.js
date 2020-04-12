@@ -10,8 +10,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/auth', (req, res, next) => {
-  console.log("Setting token:", req.params.access_token)
-  if (req.params.access_token) token = req.params.access_token
+  console.log("Setting token:", req.query.access_token)
+  if (req.query.access_token) token = req.query.access_token
   res.redirect('/')
 })
 
