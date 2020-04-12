@@ -10,6 +10,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/auth', (req, res, next) => {
+  res.render('auth')
+})
+
+router.get('/auth-record', (req, res, next) => {
   console.log(req.query)
   console.log("Setting token:", req.query.access_token)
   if (req.query.access_token) token = req.query.access_token

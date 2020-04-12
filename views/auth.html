@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      console.log(window.location.hash);
+      var hash = window.location.hash.substr(1);
+      console.log(hash);
+      window.location.replace("https://oauth-demo-111.herokuapp.com/auth-record?" + hash);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
